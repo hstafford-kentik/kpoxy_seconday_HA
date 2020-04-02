@@ -1,4 +1,4 @@
-# unsupported
+```text
 kproxy-check is a python script meant to be run as a service or background processs which will make a health check against a primary kproxy server.  It uses the telnet health check on the default port of 9996, and only checks that a response is made.   This port is configurable via command line, and must be included.
 
 If the primay server does not respond, it will start a local kproxy daemon, which MUST be installed and preconfigured.  
@@ -21,3 +21,4 @@ by default, a log minimal log file will be written to /var/log/remote_kproxy_sta
 
 To run/test the script manually:
 /usr/bin/python3 <path to script>/kproxy-check.py <IP OF PRIMARY> <HEALTHCHECK PORT> <HEALTHCHECK INTERVAL IN SECONDS> <NO. OF FAILS BEFORE STARTING LOCAL KPROXY>
+```
