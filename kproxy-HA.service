@@ -8,7 +8,7 @@ Type=simple
 User=root
 WorkingDirectory=/root
 #Environment=KENTIK_API_TOKEN=${KENTIK_API_TOKEN}
-ExecStart=/usr/bin/python3 /home/henry/kproxy-check.py ${PRIMARY_KPROXY_IP} ${PRIMARY_KPROXY_HC_PORT} ${PRIMARY_KPROXY_HC_INTERVAL} ${PRIMARY_KPROXY_MAX_FAILS}
+ExecStart=/usr/bin/python3 <PATH TO THIS SCRIPT>/kproxy-check.py ${PRIMARY_KPROXY_IP} ${PRIMARY_KPROXY_HC_PORT} ${PRIMARY_KPROXY_HC_INTERVAL} ${PRIMARY_KPROXY_MAX_FAILS}
 Restart=on-failure
 RestartSec=3
 ## Restart on failure but wait 3 sec.
